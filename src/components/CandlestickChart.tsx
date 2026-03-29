@@ -71,7 +71,7 @@ export default function CandlestickChart({ candles, markers, metricLabel }: Prop
       },
     }));
 
-    const option: echarts.EChartsOption = {
+    const option: echarts.EChartsCoreOption = {
       backgroundColor: 'transparent',
       tooltip: {
         trigger: 'axis',

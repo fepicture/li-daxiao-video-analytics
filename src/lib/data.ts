@@ -1,5 +1,19 @@
+import fs from 'fs';
+import path from 'path';
 import type { VideoMeta, DailySnapshot, CandlePoint, MetricKey, VideoStats, EventMarker } from './types';
 import { calcPopularity } from './popularity';
+
+export function loadVideos(): VideoMeta[] {
+  const filePath = path.join(process.cwd(), 'data', 'videos.json');
+  return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+}
+
+export function loadSnapshots(): DailySnapshot[] {
+  const dir = path.join(process.cwd(), 'data', 'snapshots');
+  if (!fs.existsSync(dir)) return [];
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).sort();
+  return files.map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8')));
+}
 
 export function buildCandles(
   bvid: string,

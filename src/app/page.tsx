@@ -1,10 +1,48 @@
+import { loadVideos, loadSnapshots, buildCandles, detectEvents } from '@/lib/data';
+import { calcPopularity } from '@/lib/popularity';
+import type { MetricKey } from '@/lib/types';
+import ClientPage from './ClientPage';
+
 export default function Home() {
+  const videos = loadVideos();
+  const snapshots = loadSnapshots();
+
+  // Pre-build all candle data for all videos and metrics
+  const metrics: MetricKey[] = ['view', 'like', 'favorite', 'popularity'];
+  const allCandles: Record<string, Record<MetricKey, any>> = {};
+  const allMarkers: Record<string, any> = {};
+  const latestStats: Record<string, any> = {};
+
+  const latest = snapshots[snapshots.length - 1];
+  const prevSnap = snapshots.length > 1 ? snapshots[snapshots.length - 2] : null;
+
+  for (const video of videos) {
+    allCandles[video.bvid] = {} as any;
+    for (const m of metrics) {
+      allCandles[video.bvid][m] = buildCandles(video.bvid, snapshots, m);
+    }
+    allMarkers[video.bvid] = detectEvents(video, allCandles[video.bvid].view);
+    latestStats[video.bvid] = latest?.videos[video.bvid] ?? null;
+  }
+
+  // Compute latest popularity scores
+  const popularityScores: Record<string, { score: number; delta: number }> = {};
+  for (const video of videos) {
+    const curr = latest?.videos[video.bvid];
+    const prev = prevSnap?.videos[video.bvid] ?? null;
+    const prev2 = snapshots.length > 2 ? snapshots[snapshots.length - 3]?.videos[video.bvid] ?? null : null;
+    const score = curr ? calcPopularity(curr, prev) : 0;
+    const prevScore = prev ? calcPopularity(prev, prev2) : 0;
+    popularityScores[video.bvid] = { score, delta: score - prevScore };
+  }
+
   return (
-    <main className="px-4 py-6 max-w-lg mx-auto">
-      <h1 className="text-xl font-bold mb-2">李大霄视频数据追踪</h1>
-      <p className="text-sm text-slate-400">
-        李大霄，英大证券首席经济学家，因频繁发表A股乐观言论而被散户广泛关注。
-      </p>
-    </main>
+    <ClientPage
+      videos={videos}
+      allCandles={allCandles}
+      allMarkers={allMarkers}
+      latestStats={latestStats}
+      popularityScores={popularityScores}
+    />
   );
 }
