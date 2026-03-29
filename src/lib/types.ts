@@ -23,14 +23,12 @@ export interface DailySnapshot {
   videos: Record<string, VideoStats>;
 }
 
-export interface CandlePoint {
+export interface DataPoint {
   date: string;
-  open: number;
-  close: number;
-  high: number;
-  low: number;
-  delta: number; // close - open
+  value: number;
 }
+
+export type ChartMode = 'cumulative' | 'delta';
 
 export type MetricKey = 'view' | 'like' | 'favorite' | 'popularity';
 

@@ -1,16 +1,17 @@
 'use client';
 
 import { useState } from 'react';
-import CandlestickChart from '@/components/CandlestickChart';
+import MetricChart from '@/components/MetricChart';
 import MetricSwitcher from '@/components/MetricSwitcher';
 import VideoCard from '@/components/VideoCard';
 import PopularityIndex from '@/components/PopularityIndex';
 import { useMetric } from '@/hooks/useMetric';
-import type { VideoMeta, CandlePoint, EventMarker, VideoStats, MetricKey } from '@/lib/types';
+import type { VideoMeta, DataPoint, EventMarker, VideoStats, MetricKey, ChartMode } from '@/lib/types';
 
 interface Props {
   videos: VideoMeta[];
-  allCandles: Record<string, Record<MetricKey, CandlePoint[]>>;
+  allCumulative: Record<string, Record<MetricKey, DataPoint[]>>;
+  allDeltas: Record<string, Record<MetricKey, DataPoint[]>>;
   allMarkers: Record<string, EventMarker[]>;
   latestStats: Record<string, VideoStats | null>;
   popularityScores: Record<string, { score: number; delta: number }>;
@@ -18,62 +19,76 @@ interface Props {
 
 export default function ClientPage({
   videos,
-  allCandles,
+  allCumulative,
+  allDeltas,
   allMarkers,
   latestStats,
   popularityScores,
 }: Props) {
   const [selectedBvid, setSelectedBvid] = useState(videos[0]?.bvid ?? '');
   const { metric, setMetric, label, allMetrics } = useMetric('view');
+  const [chartMode, setChartMode] = useState<ChartMode>('cumulative');
 
-  const candles = allCandles[selectedBvid]?.[metric] ?? [];
+  const data = chartMode === 'cumulative'
+    ? (allCumulative[selectedBvid]?.[metric] ?? [])
+    : (allDeltas[selectedBvid]?.[metric] ?? []);
 
-  function addTradingMarkers(markers: EventMarker[], candles: CandlePoint[]): EventMarker[] {
+  function addTradingMarkers(markers: EventMarker[], points: DataPoint[]): EventMarker[] {
     const enhanced = [...markers];
-    // A-share trading sessions: 9:30-11:30, 13:00-15:00 Beijing time
-    // For daily candles, we mark weekdays as trading days
-    for (const c of candles) {
-      const d = new Date(c.date + 'T00:00:00+08:00');
-      const day = d.getDay();
-      if (day >= 1 && day <= 5) {
-        // Only mark Monday as start of trading week for visual rhythm
-        if (day === 1) {
-          enhanced.push({
-            date: c.date,
-            type: 'trading_open',
-            label: '周一开盘',
-          });
-        }
+    for (const p of points) {
+      const d = new Date(p.date + 'T00:00:00+08:00');
+      if (d.getDay() === 1) {
+        enhanced.push({ date: p.date, type: 'trading_open', label: '周一开盘' });
       }
     }
     return enhanced;
   }
 
-  const markers = addTradingMarkers(allMarkers[selectedBvid] ?? [], candles);
+  const markers = addTradingMarkers(allMarkers[selectedBvid] ?? [], data);
   const popularity = popularityScores[selectedBvid] ?? { score: 0, delta: 0 };
 
   return (
     <main className="max-w-lg mx-auto px-4 py-5 pb-20">
-      {/* Header */}
       <h1 className="text-lg font-bold">李大霄视频数据追踪</h1>
       <p className="text-xs text-slate-400 mt-1 mb-4">
         李大霄，英大证券首席经济学家，因频繁发表A股乐观言论而被散户广泛关注。
       </p>
 
-      {/* Popularity Index */}
       <div className="mb-4">
         <PopularityIndex score={popularity.score} delta={popularity.delta} />
       </div>
 
-      {/* Metric Switcher */}
       <div className="mb-3">
         <MetricSwitcher current={metric} options={allMetrics} onChange={setMetric} />
       </div>
 
-      {/* Candlestick Chart */}
+      {/* Chart mode toggle */}
+      <div className="flex gap-1 mb-3">
+        <button
+          onClick={() => setChartMode('cumulative')}
+          className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
+            chartMode === 'cumulative'
+              ? 'bg-blue-500/20 text-blue-400 ring-1 ring-blue-500/30'
+              : 'text-slate-400 active:bg-slate-700'
+          }`}
+        >
+          累计
+        </button>
+        <button
+          onClick={() => setChartMode('delta')}
+          className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
+            chartMode === 'delta'
+              ? 'bg-blue-500/20 text-blue-400 ring-1 ring-blue-500/30'
+              : 'text-slate-400 active:bg-slate-700'
+          }`}
+        >
+          日增量
+        </button>
+      </div>
+
       <div className="bg-slate-800/50 rounded-xl p-2 mb-4">
-        {candles.length > 0 ? (
-          <CandlestickChart candles={candles} markers={markers} metricLabel={label} />
+        {data.length > 0 ? (
+          <MetricChart data={data} markers={markers} metricLabel={label} mode={chartMode} />
         ) : (
           <div className="h-[320px] flex items-center justify-center text-slate-500 text-sm">
             暂无数据
@@ -81,7 +96,6 @@ export default function ClientPage({
         )}
       </div>
 
-      {/* Video List */}
       <div className="space-y-2">
         <h2 className="text-sm font-medium text-slate-300">近期视频</h2>
         {videos.map((v) => (
@@ -95,7 +109,6 @@ export default function ClientPage({
         ))}
       </div>
 
-      {/* Footer */}
       <div className="mt-8 text-center text-xs text-slate-500">
         数据来源：B站公开数据 · 每日更新
       </div>

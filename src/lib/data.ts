@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import type { VideoMeta, DailySnapshot, CandlePoint, MetricKey, VideoStats, EventMarker } from './types';
+import type { VideoMeta, DailySnapshot, DataPoint, MetricKey, EventMarker } from './types';
 import { calcPopularity } from './popularity';
 
 export function loadVideos(): VideoMeta[] {
@@ -15,13 +15,40 @@ export function loadSnapshots(): DailySnapshot[] {
   return files.map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8')));
 }
 
-export function buildCandles(
+export function buildCumulativeSeries(
   bvid: string,
   snapshots: DailySnapshot[],
   metric: MetricKey,
-): CandlePoint[] {
+): DataPoint[] {
   const sorted = [...snapshots].sort((a, b) => a.date.localeCompare(b.date));
-  const candles: CandlePoint[] = [];
+  const points: DataPoint[] = [];
+
+  for (let i = 0; i < sorted.length; i++) {
+    const snap = sorted[i];
+    const stats = snap.videos[bvid];
+    if (!stats) continue;
+
+    let value: number;
+    if (metric === 'popularity') {
+      const prevStats = i > 0 ? sorted[i - 1].videos[bvid] : null;
+      value = calcPopularity(stats, prevStats);
+    } else {
+      value = stats[metric];
+    }
+
+    points.push({ date: snap.date, value });
+  }
+
+  return points;
+}
+
+export function buildDeltaSeries(
+  bvid: string,
+  snapshots: DailySnapshot[],
+  metric: MetricKey,
+): DataPoint[] {
+  const sorted = [...snapshots].sort((a, b) => a.date.localeCompare(b.date));
+  const points: DataPoint[] = [];
 
   for (let i = 0; i < sorted.length; i++) {
     const snap = sorted[i];
@@ -30,54 +57,40 @@ export function buildCandles(
 
     const prevStats = i > 0 ? sorted[i - 1].videos[bvid] : null;
 
-    let closeVal: number;
-    let openVal: number;
-
+    let value: number;
     if (metric === 'popularity') {
-      closeVal = calcPopularity(stats, prevStats);
-      openVal = i > 0 && prevStats
-        ? calcPopularity(prevStats, i > 1 ? sorted[i - 2].videos[bvid] ?? null : null)
+      const currScore = calcPopularity(stats, prevStats);
+      const prevScore = prevStats && i > 1
+        ? calcPopularity(prevStats, sorted[i - 2].videos[bvid] ?? null)
         : 0;
+      value = currScore - prevScore;
     } else {
-      closeVal = stats[metric];
-      openVal = prevStats ? prevStats[metric] : 0;
+      value = prevStats ? stats[metric] - prevStats[metric] : stats[metric];
     }
 
-    const high = Math.max(openVal, closeVal);
-    const low = Math.min(openVal, closeVal);
-
-    candles.push({
-      date: snap.date,
-      open: openVal,
-      close: closeVal,
-      high,
-      low,
-      delta: closeVal - openVal,
-    });
+    points.push({ date: snap.date, value });
   }
 
-  return candles;
+  return points;
 }
 
 export function detectEvents(
   video: VideoMeta,
-  candles: CandlePoint[],
+  deltaSeries: DataPoint[],
 ): EventMarker[] {
   const markers: EventMarker[] = [];
 
-  // Publish date marker
   const pubDate = new Date(video.pubdate * 1000).toISOString().split('T')[0];
   markers.push({ date: pubDate, type: 'publish', label: '发布' });
 
-  // Spike detection: delta > 2x average delta
-  if (candles.length >= 3) {
-    const avgDelta = candles.reduce((sum, c) => sum + Math.abs(c.delta), 0) / candles.length;
-    for (const candle of candles) {
-      if (Math.abs(candle.delta) > avgDelta * 2 && avgDelta > 0) {
+  if (deltaSeries.length >= 3) {
+    const avgDelta = deltaSeries.reduce((sum, p) => sum + Math.abs(p.value), 0) / deltaSeries.length;
+    for (const point of deltaSeries) {
+      if (Math.abs(point.value) > avgDelta * 2 && avgDelta > 0) {
         markers.push({
-          date: candle.date,
+          date: point.date,
           type: 'spike',
-          label: candle.delta > 0 ? '数据飙升' : '数据骤降',
+          label: point.value > 0 ? '数据飙升' : '数据骤降',
         });
       }
     }
