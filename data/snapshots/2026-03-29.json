@@ -1,0 +1,51 @@
+{
+  "date": "2026-03-29",
+  "collected_at": "2026-03-29T02:28:08.161Z",
+  "videos": {
+    "BV1seed00001": {
+      "view": 85634,
+      "like": 6850,
+      "favorite": 1712,
+      "coin": 2569,
+      "share": 428,
+      "danmaku": 2569,
+      "reply": 2140
+    },
+    "BV1seed00002": {
+      "view": 19346,
+      "like": 1547,
+      "favorite": 193,
+      "coin": 773,
+      "share": 290,
+      "danmaku": 967,
+      "reply": 96
+    },
+    "BV1seed00003": {
+      "view": 61614,
+      "like": 4929,
+      "favorite": 1232,
+      "coin": 1848,
+      "share": 924,
+      "danmaku": 616,
+      "reply": 308
+    },
+    "BV1seed00004": {
+      "view": 61690,
+      "like": 3084,
+      "favorite": 1850,
+      "coin": 1233,
+      "share": 1542,
+      "danmaku": 2467,
+      "reply": 925
+    },
+    "BV1seed00005": {
+      "view": 13085,
+      "like": 915,
+      "favorite": 392,
+      "coin": 392,
+      "share": 65,
+      "danmaku": 392,
+      "reply": 327
+    }
+  }
+}

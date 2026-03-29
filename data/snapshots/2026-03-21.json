@@ -1,0 +1,24 @@
+{
+  "date": "2026-03-21",
+  "collected_at": "2026-03-21T02:28:08.161Z",
+  "videos": {
+    "BV1seed00001": {
+      "view": 29117,
+      "like": 873,
+      "favorite": 582,
+      "coin": 291,
+      "share": 145,
+      "danmaku": 582,
+      "reply": 727
+    },
+    "BV1seed00002": {
+      "view": 41935,
+      "like": 2935,
+      "favorite": 419,
+      "coin": 1677,
+      "share": 209,
+      "danmaku": 1258,
+      "reply": 1467
+    }
+  }
+}
