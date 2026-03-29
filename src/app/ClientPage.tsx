@@ -27,7 +27,29 @@ export default function ClientPage({
   const { metric, setMetric, label, allMetrics } = useMetric('view');
 
   const candles = allCandles[selectedBvid]?.[metric] ?? [];
-  const markers = allMarkers[selectedBvid] ?? [];
+
+  function addTradingMarkers(markers: EventMarker[], candles: CandlePoint[]): EventMarker[] {
+    const enhanced = [...markers];
+    // A-share trading sessions: 9:30-11:30, 13:00-15:00 Beijing time
+    // For daily candles, we mark weekdays as trading days
+    for (const c of candles) {
+      const d = new Date(c.date + 'T00:00:00+08:00');
+      const day = d.getDay();
+      if (day >= 1 && day <= 5) {
+        // Only mark Monday as start of trading week for visual rhythm
+        if (day === 1) {
+          enhanced.push({
+            date: c.date,
+            type: 'trading_open',
+            label: '周一开盘',
+          });
+        }
+      }
+    }
+    return enhanced;
+  }
+
+  const markers = addTradingMarkers(allMarkers[selectedBvid] ?? [], candles);
   const popularity = popularityScores[selectedBvid] ?? { score: 0, delta: 0 };
 
   return (
