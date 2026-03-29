@@ -45,6 +45,7 @@ export default function Home() {
       allMarkers={allMarkers}
       latestStats={latestStats}
       popularityScores={popularityScores}
+      snapshotCount={snapshots.length}
     />
   );
 }

@@ -5,6 +5,7 @@ import MetricChart from '@/components/MetricChart';
 import MetricSwitcher from '@/components/MetricSwitcher';
 import VideoCard from '@/components/VideoCard';
 import PopularityIndex from '@/components/PopularityIndex';
+import StatsOverview from '@/components/StatsOverview';
 import { useMetric } from '@/hooks/useMetric';
 import type { VideoMeta, DataPoint, EventMarker, VideoStats, MetricKey, ChartMode } from '@/lib/types';
 
@@ -15,6 +16,7 @@ interface Props {
   allMarkers: Record<string, EventMarker[]>;
   latestStats: Record<string, VideoStats | null>;
   popularityScores: Record<string, { score: number; delta: number }>;
+  snapshotCount: number;
 }
 
 export default function ClientPage({
@@ -24,6 +26,7 @@ export default function ClientPage({
   allMarkers,
   latestStats,
   popularityScores,
+  snapshotCount,
 }: Props) {
   const [selectedBvid, setSelectedBvid] = useState(videos[0]?.bvid ?? '');
   const { metric, setMetric, label, allMetrics } = useMetric('view');
@@ -46,6 +49,8 @@ export default function ClientPage({
 
   const markers = addTradingMarkers(allMarkers[selectedBvid] ?? [], data);
   const popularity = popularityScores[selectedBvid] ?? { score: 0, delta: 0 };
+  const stats = latestStats[selectedBvid];
+  const hasEnoughData = snapshotCount >= 3;
 
   return (
     <main className="max-w-lg mx-auto px-4 py-5 pb-20">
@@ -62,35 +67,38 @@ export default function ClientPage({
         <MetricSwitcher current={metric} options={allMetrics} onChange={setMetric} />
       </div>
 
-      {/* Chart mode toggle */}
-      <div className="flex gap-1 mb-3">
-        <button
-          onClick={() => setChartMode('cumulative')}
-          className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
-            chartMode === 'cumulative'
-              ? 'bg-blue-500/20 text-blue-400 ring-1 ring-blue-500/30'
-              : 'text-slate-400 active:bg-slate-700'
-          }`}
-        >
-          累计
-        </button>
-        <button
-          onClick={() => setChartMode('delta')}
-          className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
-            chartMode === 'delta'
-              ? 'bg-blue-500/20 text-blue-400 ring-1 ring-blue-500/30'
-              : 'text-slate-400 active:bg-slate-700'
-          }`}
-        >
-          日增量
-        </button>
-      </div>
+      {hasEnoughData && (
+        <div className="flex gap-1 mb-3">
+          <button
+            onClick={() => setChartMode('cumulative')}
+            className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
+              chartMode === 'cumulative'
+                ? 'bg-blue-500/20 text-blue-400 ring-1 ring-blue-500/30'
+                : 'text-slate-400 active:bg-slate-700'
+            }`}
+          >
+            累计
+          </button>
+          <button
+            onClick={() => setChartMode('delta')}
+            className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
+              chartMode === 'delta'
+                ? 'bg-blue-500/20 text-blue-400 ring-1 ring-blue-500/30'
+                : 'text-slate-400 active:bg-slate-700'
+            }`}
+          >
+            日增量
+          </button>
+        </div>
+      )}
 
-      <div className="bg-slate-800/50 rounded-xl p-2 mb-4">
-        {data.length > 0 ? (
+      <div className="bg-slate-800/50 rounded-xl p-3 mb-4">
+        {hasEnoughData && data.length > 0 ? (
           <MetricChart data={data} markers={markers} metricLabel={label} mode={chartMode} />
+        ) : stats ? (
+          <StatsOverview stats={stats} snapshotCount={snapshotCount} />
         ) : (
-          <div className="h-[320px] flex items-center justify-center text-slate-500 text-sm">
+          <div className="h-40 flex items-center justify-center text-slate-500 text-sm">
             暂无数据
           </div>
         )}
@@ -110,7 +118,7 @@ export default function ClientPage({
       </div>
 
       <div className="mt-8 text-center text-xs text-slate-500">
-        数据来源：B站公开数据 · 每日更新
+        数据来源：B站公开数据 · 每4小时更新
       </div>
     </main>
   );

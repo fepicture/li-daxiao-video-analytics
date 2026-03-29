@@ -123,10 +123,13 @@ async function main() {
   const videoMap = new Map();
   for (const v of existingVideos) videoMap.set(v.bvid, v);
 
-  const today = new Date().toISOString().split('T')[0];
+  const now = new Date();
+  const today = now.toISOString().split('T')[0];
+  const hour = String(now.getUTCHours()).padStart(2, '0');
+  const snapId = `${today}-${hour}`; // e.g. "2026-03-29-08"
   const snapshot = {
     date: today,
-    collected_at: new Date().toISOString(),
+    collected_at: now.toISOString(),
     videos: {},
   };
 
@@ -153,9 +156,9 @@ async function main() {
   console.log(`\nWrote ${allVideos.length} videos to data/videos.json`);
 
   // Step 4: Write snapshot
-  const snapPath = join(SNAP_DIR, `${today}.json`);
+  const snapPath = join(SNAP_DIR, `${snapId}.json`);
   writeFileSync(snapPath, JSON.stringify(snapshot, null, 2));
-  console.log(`Wrote snapshot to data/snapshots/${today}.json`);
+  console.log(`Wrote snapshot to data/snapshots/${snapId}.json`);
   console.log(`Collected stats for ${Object.keys(snapshot.videos).length} videos.`);
 }
 
