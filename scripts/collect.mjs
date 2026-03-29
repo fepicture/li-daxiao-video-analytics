@@ -31,12 +31,20 @@ const HEADERS = {
 // Known BVIDs from Li Daxiao's official channel (mid: 2137589551).
 // These serve as seeds — new videos are discovered via the space API when possible.
 const SEED_BVIDS = [
+  // Mar 29, 2026
+  'BV1QVXUBpE91', // 美股慌了吗
+  'BV1paXUBgEZv', // 中国制造值得夸奖
+  'BV1mWXUB1E5y', // 能源短缺对欧洲经济的影响
+  'BV114XUBCEbs', // 能源短缺对美国经济的影响
+  'BV1yUXmBzEVw', // 俄罗斯禁汽油出口的影响
+  // Mar 21-25, 2026
   'BV1WHQmBNE3X', // 成为李大霄粉丝的15个条件
   'BV1sQQRBoEKX', // 或迎来反弹的曙光
   'BV16yQdBHE7q', // 呼吁加大稳定力量
   'BV1MxQdBeEzV', // 呼吁稳市 保护散户
   'BV1yTAwzTEZp', // 游资的投降书
   'BV1unQ9BFEux', // 呼吁稳市 不必恐慌
+  // Older
   'BV1MUWPzzEXs', // 9.19 李大霄"大跳水"分析
   'BV1uez4BpEMD', // 突发停牌！下周五大预测
   'BV1yfzWBBEAy', // 封板不要秀肌肉
