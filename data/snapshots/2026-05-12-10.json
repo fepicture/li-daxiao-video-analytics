@@ -1,0 +1,1536 @@
+{
+  "date": "2026-05-12",
+  "collected_at": "2026-05-12T10:56:55.110Z",
+  "videos": {
+    "BV1QVXUBpE91": {
+      "view": 49070,
+      "like": 969,
+      "favorite": 65,
+      "coin": 85,
+      "share": 147,
+      "danmaku": 76,
+      "reply": 792
+    },
+    "BV1paXUBgEZv": {
+      "view": 22414,
+      "like": 707,
+      "favorite": 125,
+      "coin": 59,
+      "share": 35,
+      "danmaku": 55,
+      "reply": 210
+    },
+    "BV1mWXUB1E5y": {
+      "view": 21453,
+      "like": 597,
+      "favorite": 33,
+      "coin": 41,
+      "share": 39,
+      "danmaku": 44,
+      "reply": 188
+    },
+    "BV114XUBCEbs": {
+      "view": 18704,
+      "like": 612,
+      "favorite": 23,
+      "coin": 56,
+      "share": 23,
+      "danmaku": 24,
+      "reply": 186
+    },
+    "BV1yUXmBzEVw": {
+      "view": 82518,
+      "like": 1423,
+      "favorite": 223,
+      "coin": 130,
+      "share": 326,
+      "danmaku": 98,
+      "reply": 400
+    },
+    "BV1WHQmBNE3X": {
+      "view": 106121,
+      "like": 2189,
+      "favorite": 356,
+      "coin": 307,
+      "share": 614,
+      "danmaku": 201,
+      "reply": 1413
+    },
+    "BV1sQQRBoEKX": {
+      "view": 107034,
+      "like": 1872,
+      "favorite": 159,
+      "coin": 153,
+      "share": 825,
+      "danmaku": 254,
+      "reply": 1228
+    },
+    "BV16yQdBHE7q": {
+      "view": 58584,
+      "like": 1204,
+      "favorite": 85,
+      "coin": 158,
+      "share": 222,
+      "danmaku": 111,
+      "reply": 1162
+    },
+    "BV1MxQdBeEzV": {
+      "view": 75230,
+      "like": 1710,
+      "favorite": 142,
+      "coin": 278,
+      "share": 493,
+      "danmaku": 255,
+      "reply": 931
+    },
+    "BV1yTAwzTEZp": {
+      "view": 141359,
+      "like": 2488,
+      "favorite": 394,
+      "coin": 226,
+      "share": 938,
+      "danmaku": 250,
+      "reply": 1215
+    },
+    "BV1unQ9BFEux": {
+      "view": 108249,
+      "like": 1695,
+      "favorite": 143,
+      "coin": 139,
+      "share": 530,
+      "danmaku": 153,
+      "reply": 1562
+    },
+    "BV1uez4BpEMD": {
+      "view": 72432,
+      "like": 1533,
+      "favorite": 141,
+      "coin": 149,
+      "share": 464,
+      "danmaku": 0,
+      "reply": 1089
+    },
+    "BV1yfzWBBEAy": {
+      "view": 52769,
+      "like": 1151,
+      "favorite": 108,
+      "coin": 138,
+      "share": 208,
+      "danmaku": 0,
+      "reply": 769
+    },
+    "BV1wNQqBKEhu": {
+      "view": 55365,
+      "like": 1039,
+      "favorite": 96,
+      "coin": 88,
+      "share": 90,
+      "danmaku": 32,
+      "reply": 656
+    },
+    "BV1z86RBQEdD": {
+      "view": 53139,
+      "like": 1105,
+      "favorite": 124,
+      "coin": 111,
+      "share": 119,
+      "danmaku": 0,
+      "reply": 739
+    },
+    "BV1memyB9ExY": {
+      "view": 33232,
+      "like": 799,
+      "favorite": 111,
+      "coin": 53,
+      "share": 72,
+      "danmaku": 0,
+      "reply": 487
+    },
+    "BV1dL5n6XEcr": {
+      "view": 33152,
+      "like": 925,
+      "favorite": 71,
+      "coin": 68,
+      "share": 97,
+      "danmaku": 8,
+      "reply": 264
+    },
+    "BV1tm576NEky": {
+      "view": 50563,
+      "like": 1196,
+      "favorite": 132,
+      "coin": 131,
+      "share": 191,
+      "danmaku": 95,
+      "reply": 740
+    },
+    "BV1HoRDBUEsu": {
+      "view": 40527,
+      "like": 1043,
+      "favorite": 159,
+      "coin": 121,
+      "share": 212,
+      "danmaku": 143,
+      "reply": 841
+    },
+    "BV1zzRSB3EVt": {
+      "view": 23678,
+      "like": 701,
+      "favorite": 57,
+      "coin": 42,
+      "share": 62,
+      "danmaku": 15,
+      "reply": 635
+    },
+    "BV15DdGBAEra": {
+      "view": 43719,
+      "like": 1028,
+      "favorite": 143,
+      "coin": 93,
+      "share": 183,
+      "danmaku": 91,
+      "reply": 988
+    },
+    "BV1d1dGBvE2L": {
+      "view": 31627,
+      "like": 774,
+      "favorite": 70,
+      "coin": 61,
+      "share": 42,
+      "danmaku": 38,
+      "reply": 202
+    },
+    "BV1fvdgBeER9": {
+      "view": 21943,
+      "like": 702,
+      "favorite": 97,
+      "coin": 63,
+      "share": 35,
+      "danmaku": 47,
+      "reply": 354
+    },
+    "BV1uLdgBEEBQ": {
+      "view": 28104,
+      "like": 879,
+      "favorite": 84,
+      "coin": 113,
+      "share": 70,
+      "danmaku": 92,
+      "reply": 335
+    },
+    "BV1NndMBTEqc": {
+      "view": 28792,
+      "like": 761,
+      "favorite": 106,
+      "coin": 54,
+      "share": 54,
+      "danmaku": 77,
+      "reply": 435
+    },
+    "BV1DmdMBmEow": {
+      "view": 34540,
+      "like": 858,
+      "favorite": 75,
+      "coin": 67,
+      "share": 60,
+      "danmaku": 76,
+      "reply": 360
+    },
+    "BV171dAByED6": {
+      "view": 43905,
+      "like": 1133,
+      "favorite": 146,
+      "coin": 147,
+      "share": 131,
+      "danmaku": 83,
+      "reply": 614
+    },
+    "BV1TCdFBJEcu": {
+      "view": 47085,
+      "like": 1044,
+      "favorite": 168,
+      "coin": 76,
+      "share": 185,
+      "danmaku": 43,
+      "reply": 739
+    },
+    "BV1zfdFBMEbJ": {
+      "view": 27066,
+      "like": 863,
+      "favorite": 125,
+      "coin": 96,
+      "share": 141,
+      "danmaku": 32,
+      "reply": 422
+    },
+    "BV1aVdcBZEcD": {
+      "view": 22487,
+      "like": 732,
+      "favorite": 88,
+      "coin": 101,
+      "share": 51,
+      "danmaku": 79,
+      "reply": 417
+    },
+    "BV1QjRbBiEzT": {
+      "view": 78637,
+      "like": 1523,
+      "favorite": 327,
+      "coin": 147,
+      "share": 611,
+      "danmaku": 84,
+      "reply": 1086
+    },
+    "BV1DERbBNENp": {
+      "view": 24247,
+      "like": 694,
+      "favorite": 50,
+      "coin": 44,
+      "share": 54,
+      "danmaku": 25,
+      "reply": 109
+    },
+    "BV1GLRbBMEWD": {
+      "view": 32697,
+      "like": 858,
+      "favorite": 69,
+      "coin": 57,
+      "share": 57,
+      "danmaku": 19,
+      "reply": 252
+    },
+    "BV1ZfRxBgExB": {
+      "view": 50926,
+      "like": 1225,
+      "favorite": 173,
+      "coin": 130,
+      "share": 194,
+      "danmaku": 126,
+      "reply": 591
+    },
+    "BV1FhRsBrEQx": {
+      "view": 40610,
+      "like": 917,
+      "favorite": 72,
+      "coin": 62,
+      "share": 139,
+      "danmaku": 54,
+      "reply": 687
+    },
+    "BV1NARxBUE37": {
+      "view": 76430,
+      "like": 1388,
+      "favorite": 145,
+      "coin": 116,
+      "share": 263,
+      "danmaku": 92,
+      "reply": 625
+    },
+    "BV1yR9ZBuEhY": {
+      "view": 17306,
+      "like": 646,
+      "favorite": 78,
+      "coin": 54,
+      "share": 36,
+      "danmaku": 36,
+      "reply": 315
+    },
+    "BV1Sk9dBzEKz": {
+      "view": 22314,
+      "like": 873,
+      "favorite": 159,
+      "coin": 186,
+      "share": 84,
+      "danmaku": 68,
+      "reply": 354
+    },
+    "BV1Sz9dBrEkQ": {
+      "view": 19125,
+      "like": 585,
+      "favorite": 53,
+      "coin": 66,
+      "share": 38,
+      "danmaku": 38,
+      "reply": 340
+    },
+    "BV1em9XBzEPB": {
+      "view": 18993,
+      "like": 682,
+      "favorite": 69,
+      "coin": 93,
+      "share": 48,
+      "danmaku": 55,
+      "reply": 542
+    },
+    "BV13X9XBKExB": {
+      "view": 21886,
+      "like": 637,
+      "favorite": 92,
+      "coin": 63,
+      "share": 84,
+      "danmaku": 40,
+      "reply": 359
+    },
+    "BV1uARuByEX5": {
+      "view": 33876,
+      "like": 939,
+      "favorite": 161,
+      "coin": 157,
+      "share": 90,
+      "danmaku": 76,
+      "reply": 686
+    },
+    "BV1ihRuBsESo": {
+      "view": 18430,
+      "like": 656,
+      "favorite": 78,
+      "coin": 56,
+      "share": 44,
+      "danmaku": 76,
+      "reply": 250
+    },
+    "BV1tbRgB1Eib": {
+      "view": 26791,
+      "like": 686,
+      "favorite": 85,
+      "coin": 49,
+      "share": 115,
+      "danmaku": 66,
+      "reply": 402
+    },
+    "BV1thRgB5EqL": {
+      "view": 20966,
+      "like": 642,
+      "favorite": 56,
+      "coin": 64,
+      "share": 34,
+      "danmaku": 59,
+      "reply": 301
+    },
+    "BV1Jf9YB8E6B": {
+      "view": 32908,
+      "like": 1021,
+      "favorite": 99,
+      "coin": 124,
+      "share": 70,
+      "danmaku": 29,
+      "reply": 874
+    },
+    "BV1Dm9tBaEb5": {
+      "view": 59978,
+      "like": 1173,
+      "favorite": 247,
+      "coin": 138,
+      "share": 107,
+      "danmaku": 100,
+      "reply": 767
+    },
+    "BV1E89UBvE62": {
+      "view": 47045,
+      "like": 1112,
+      "favorite": 116,
+      "coin": 117,
+      "share": 183,
+      "danmaku": 144,
+      "reply": 665
+    },
+    "BV1AC9SB1Eaf": {
+      "view": 36340,
+      "like": 797,
+      "favorite": 78,
+      "coin": 94,
+      "share": 113,
+      "danmaku": 63,
+      "reply": 420
+    },
+    "BV11q9SBUEsz": {
+      "view": 24623,
+      "like": 756,
+      "favorite": 71,
+      "coin": 83,
+      "share": 106,
+      "danmaku": 51,
+      "reply": 450
+    },
+    "BV1Uz9kBNEuf": {
+      "view": 40473,
+      "like": 954,
+      "favorite": 98,
+      "coin": 63,
+      "share": 131,
+      "danmaku": 71,
+      "reply": 513
+    },
+    "BV1QG9CBrE9Z": {
+      "view": 26453,
+      "like": 761,
+      "favorite": 81,
+      "coin": 71,
+      "share": 45,
+      "danmaku": 29,
+      "reply": 305
+    },
+    "BV1G496BvEcq": {
+      "view": 20225,
+      "like": 705,
+      "favorite": 88,
+      "coin": 95,
+      "share": 50,
+      "danmaku": 63,
+      "reply": 301
+    },
+    "BV12boCBrEQz": {
+      "view": 63344,
+      "like": 1309,
+      "favorite": 241,
+      "coin": 212,
+      "share": 282,
+      "danmaku": 165,
+      "reply": 903
+    },
+    "BV1d1ozB5E3h": {
+      "view": 32876,
+      "like": 920,
+      "favorite": 141,
+      "coin": 117,
+      "share": 88,
+      "danmaku": 107,
+      "reply": 652
+    },
+    "BV1NNo6BhEm1": {
+      "view": 34918,
+      "like": 850,
+      "favorite": 89,
+      "coin": 69,
+      "share": 193,
+      "danmaku": 47,
+      "reply": 572
+    },
+    "BV1Geo6BrEck": {
+      "view": 12018,
+      "like": 442,
+      "favorite": 29,
+      "coin": 21,
+      "share": 9,
+      "danmaku": 25,
+      "reply": 143
+    },
+    "BV1b6o6BqE6f": {
+      "view": 54124,
+      "like": 1085,
+      "favorite": 197,
+      "coin": 94,
+      "share": 317,
+      "danmaku": 101,
+      "reply": 468
+    },
+    "BV1PSo6BhEkd": {
+      "view": 60020,
+      "like": 1033,
+      "favorite": 110,
+      "coin": 60,
+      "share": 111,
+      "danmaku": 71,
+      "reply": 495
+    },
+    "BV1YCovBFE88": {
+      "view": 27321,
+      "like": 839,
+      "favorite": 138,
+      "coin": 90,
+      "share": 76,
+      "danmaku": 43,
+      "reply": 318
+    },
+    "BV1uUovBdEj4": {
+      "view": 55909,
+      "like": 1165,
+      "favorite": 158,
+      "coin": 72,
+      "share": 102,
+      "danmaku": 62,
+      "reply": 584
+    },
+    "BV1GMZFBcEpp": {
+      "view": 75743,
+      "like": 1401,
+      "favorite": 246,
+      "coin": 132,
+      "share": 270,
+      "danmaku": 154,
+      "reply": 552
+    },
+    "BV13joXBrEPm": {
+      "view": 20524,
+      "like": 646,
+      "favorite": 45,
+      "coin": 70,
+      "share": 33,
+      "danmaku": 16,
+      "reply": 196
+    },
+    "BV1m6oSBtEGF": {
+      "view": 69052,
+      "like": 1536,
+      "favorite": 365,
+      "coin": 199,
+      "share": 278,
+      "danmaku": 99,
+      "reply": 657
+    },
+    "BV1qEoSBkEmD": {
+      "view": 31604,
+      "like": 831,
+      "favorite": 120,
+      "coin": 78,
+      "share": 64,
+      "danmaku": 51,
+      "reply": 409
+    },
+    "BV17roDB2Eab": {
+      "view": 14757,
+      "like": 565,
+      "favorite": 40,
+      "coin": 46,
+      "share": 21,
+      "danmaku": 44,
+      "reply": 159
+    },
+    "BV1rSoLBWEyb": {
+      "view": 27848,
+      "like": 913,
+      "favorite": 72,
+      "coin": 71,
+      "share": 123,
+      "danmaku": 69,
+      "reply": 310
+    },
+    "BV13uojB6Eah": {
+      "view": 16850,
+      "like": 606,
+      "favorite": 32,
+      "coin": 32,
+      "share": 33,
+      "danmaku": 34,
+      "reply": 230
+    },
+    "BV1LCojB7EGf": {
+      "view": 12685,
+      "like": 535,
+      "favorite": 25,
+      "coin": 41,
+      "share": 12,
+      "danmaku": 13,
+      "reply": 141
+    },
+    "BV12wo7BPEH8": {
+      "view": 13187,
+      "like": 583,
+      "favorite": 36,
+      "coin": 56,
+      "share": 20,
+      "danmaku": 40,
+      "reply": 178
+    },
+    "BV1S3o5BhE7p": {
+      "view": 8339,
+      "like": 308,
+      "favorite": 47,
+      "coin": 34,
+      "share": 12,
+      "danmaku": 6,
+      "reply": 38
+    },
+    "BV127o5B4E75": {
+      "view": 20318,
+      "like": 631,
+      "favorite": 55,
+      "coin": 53,
+      "share": 23,
+      "danmaku": 39,
+      "reply": 411
+    },
+    "BV1W3oMBTExU": {
+      "view": 28388,
+      "like": 832,
+      "favorite": 61,
+      "coin": 89,
+      "share": 35,
+      "danmaku": 40,
+      "reply": 485
+    },
+    "BV15po4BrESv": {
+      "view": 33404,
+      "like": 828,
+      "favorite": 64,
+      "coin": 87,
+      "share": 36,
+      "danmaku": 41,
+      "reply": 639
+    },
+    "BV1zXosBVEn5": {
+      "view": 26199,
+      "like": 884,
+      "favorite": 89,
+      "coin": 139,
+      "share": 65,
+      "danmaku": 109,
+      "reply": 488
+    },
+    "BV1ZQopBNEKn": {
+      "view": 24986,
+      "like": 692,
+      "favorite": 64,
+      "coin": 58,
+      "share": 28,
+      "danmaku": 68,
+      "reply": 544
+    },
+    "BV1YioHB4EZj": {
+      "view": 27938,
+      "like": 834,
+      "favorite": 65,
+      "coin": 64,
+      "share": 37,
+      "danmaku": 42,
+      "reply": 515
+    },
+    "BV1AqdUBmEpt": {
+      "view": 54855,
+      "like": 1184,
+      "favorite": 140,
+      "coin": 119,
+      "share": 156,
+      "danmaku": 65,
+      "reply": 715
+    },
+    "BV1rHdSB2EY1": {
+      "view": 26821,
+      "like": 884,
+      "favorite": 104,
+      "coin": 103,
+      "share": 59,
+      "danmaku": 85,
+      "reply": 508
+    },
+    "BV1Pud1BgEoU": {
+      "view": 33638,
+      "like": 958,
+      "favorite": 102,
+      "coin": 94,
+      "share": 72,
+      "danmaku": 61,
+      "reply": 631
+    },
+    "BV1Q1d6BuEy4": {
+      "view": 46450,
+      "like": 1047,
+      "favorite": 117,
+      "coin": 106,
+      "share": 163,
+      "danmaku": 133,
+      "reply": 635
+    },
+    "BV188drBuEUe": {
+      "view": 26998,
+      "like": 823,
+      "favorite": 57,
+      "coin": 76,
+      "share": 85,
+      "danmaku": 62,
+      "reply": 358
+    },
+    "BV1UnoTB3EgV": {
+      "view": 34058,
+      "like": 957,
+      "favorite": 124,
+      "coin": 119,
+      "share": 199,
+      "danmaku": 67,
+      "reply": 728
+    },
+    "BV1tjoNBKEox": {
+      "view": 42859,
+      "like": 957,
+      "favorite": 67,
+      "coin": 105,
+      "share": 121,
+      "danmaku": 38,
+      "reply": 413
+    },
+    "BV1L3oFBNEQS": {
+      "view": 37427,
+      "like": 1220,
+      "favorite": 141,
+      "coin": 335,
+      "share": 132,
+      "danmaku": 102,
+      "reply": 506
+    },
+    "BV1BmoFBzEyH": {
+      "view": 17053,
+      "like": 595,
+      "favorite": 34,
+      "coin": 52,
+      "share": 22,
+      "danmaku": 19,
+      "reply": 210
+    },
+    "BV1xudfB2EaR": {
+      "view": 63759,
+      "like": 1487,
+      "favorite": 196,
+      "coin": 127,
+      "share": 209,
+      "danmaku": 96,
+      "reply": 626
+    },
+    "BV1UfddB1EQJ": {
+      "view": 24819,
+      "like": 769,
+      "favorite": 52,
+      "coin": 55,
+      "share": 47,
+      "danmaku": 24,
+      "reply": 232
+    },
+    "BV1bAdsBXETt": {
+      "view": 51068,
+      "like": 1309,
+      "favorite": 140,
+      "coin": 109,
+      "share": 157,
+      "danmaku": 98,
+      "reply": 537
+    },
+    "BV1YXdWB8EkK": {
+      "view": 30814,
+      "like": 873,
+      "favorite": 105,
+      "coin": 75,
+      "share": 58,
+      "danmaku": 32,
+      "reply": 296
+    },
+    "BV1WfdLBWEAX": {
+      "view": 44004,
+      "like": 937,
+      "favorite": 153,
+      "coin": 81,
+      "share": 47,
+      "danmaku": 31,
+      "reply": 535
+    },
+    "BV1Ktd5BdEag": {
+      "view": 28553,
+      "like": 798,
+      "favorite": 58,
+      "coin": 53,
+      "share": 45,
+      "danmaku": 67,
+      "reply": 511
+    },
+    "BV1QtQjBfED8": {
+      "view": 26004,
+      "like": 761,
+      "favorite": 55,
+      "coin": 61,
+      "share": 58,
+      "danmaku": 69,
+      "reply": 578
+    },
+    "BV1YPQLB4ELX": {
+      "view": 44825,
+      "like": 917,
+      "favorite": 62,
+      "coin": 68,
+      "share": 168,
+      "danmaku": 66,
+      "reply": 740
+    },
+    "BV1DqQuBzEk3": {
+      "view": 43111,
+      "like": 1030,
+      "favorite": 70,
+      "coin": 80,
+      "share": 135,
+      "danmaku": 52,
+      "reply": 652
+    },
+    "BV1kqQgBbEhi": {
+      "view": 27417,
+      "like": 786,
+      "favorite": 47,
+      "coin": 56,
+      "share": 51,
+      "danmaku": 50,
+      "reply": 494
+    },
+    "BV1SMQiB5EiY": {
+      "view": 34281,
+      "like": 884,
+      "favorite": 64,
+      "coin": 58,
+      "share": 47,
+      "danmaku": 35,
+      "reply": 397
+    },
+    "BV1EDQvBoETE": {
+      "view": 32666,
+      "like": 735,
+      "favorite": 74,
+      "coin": 46,
+      "share": 99,
+      "danmaku": 82,
+      "reply": 411
+    },
+    "BV1SWQYBqEkE": {
+      "view": 46215,
+      "like": 1087,
+      "favorite": 116,
+      "coin": 71,
+      "share": 364,
+      "danmaku": 146,
+      "reply": 888
+    },
+    "BV1zsQeBREXN": {
+      "view": 41992,
+      "like": 893,
+      "favorite": 54,
+      "coin": 67,
+      "share": 97,
+      "danmaku": 49,
+      "reply": 567
+    },
+    "BV1HMQtBGEka": {
+      "view": 43722,
+      "like": 1130,
+      "favorite": 106,
+      "coin": 151,
+      "share": 178,
+      "danmaku": 144,
+      "reply": 964
+    },
+    "BV1CJQsBMEfV": {
+      "view": 37481,
+      "like": 916,
+      "favorite": 157,
+      "coin": 88,
+      "share": 142,
+      "danmaku": 67,
+      "reply": 361
+    },
+    "BV1D2QsBUEV2": {
+      "view": 32112,
+      "like": 880,
+      "favorite": 53,
+      "coin": 81,
+      "share": 74,
+      "danmaku": 112,
+      "reply": 343
+    },
+    "BV1Z8DDBaE4u": {
+      "view": 40611,
+      "like": 1009,
+      "favorite": 55,
+      "coin": 79,
+      "share": 83,
+      "danmaku": 55,
+      "reply": 370
+    },
+    "BV14YDQBJE1H": {
+      "view": 28624,
+      "like": 793,
+      "favorite": 33,
+      "coin": 62,
+      "share": 38,
+      "danmaku": 32,
+      "reply": 252
+    },
+    "BV1NqDQB2EsQ": {
+      "view": 40168,
+      "like": 993,
+      "favorite": 88,
+      "coin": 115,
+      "share": 150,
+      "danmaku": 78,
+      "reply": 350
+    },
+    "BV1MMDDBmEiV": {
+      "view": 39182,
+      "like": 1235,
+      "favorite": 138,
+      "coin": 182,
+      "share": 186,
+      "danmaku": 159,
+      "reply": 532
+    },
+    "BV1MED1BvEjL": {
+      "view": 50680,
+      "like": 1406,
+      "favorite": 223,
+      "coin": 216,
+      "share": 174,
+      "danmaku": 175,
+      "reply": 589
+    },
+    "BV114QMBtE53": {
+      "view": 35084,
+      "like": 948,
+      "favorite": 99,
+      "coin": 101,
+      "share": 74,
+      "danmaku": 94,
+      "reply": 443
+    },
+    "BV187QMBeEAz": {
+      "view": 25180,
+      "like": 717,
+      "favorite": 32,
+      "coin": 52,
+      "share": 32,
+      "danmaku": 47,
+      "reply": 310
+    },
+    "BV1ftQwBYEYy": {
+      "view": 30336,
+      "like": 1012,
+      "favorite": 75,
+      "coin": 98,
+      "share": 87,
+      "danmaku": 97,
+      "reply": 373
+    },
+    "BV15BQwBdE7L": {
+      "view": 38611,
+      "like": 1192,
+      "favorite": 102,
+      "coin": 116,
+      "share": 195,
+      "danmaku": 162,
+      "reply": 525
+    },
+    "BV1AZQFBNEnw": {
+      "view": 28478,
+      "like": 787,
+      "favorite": 52,
+      "coin": 61,
+      "share": 49,
+      "danmaku": 67,
+      "reply": 292
+    },
+    "BV11UDZBYEi8": {
+      "view": 66108,
+      "like": 1320,
+      "favorite": 146,
+      "coin": 125,
+      "share": 502,
+      "danmaku": 160,
+      "reply": 619
+    },
+    "BV1A9DZBFE6v": {
+      "view": 37634,
+      "like": 915,
+      "favorite": 60,
+      "coin": 83,
+      "share": 84,
+      "danmaku": 61,
+      "reply": 349
+    },
+    "BV1FcD4BNECx": {
+      "view": 43871,
+      "like": 1024,
+      "favorite": 61,
+      "coin": 70,
+      "share": 114,
+      "danmaku": 55,
+      "reply": 534
+    },
+    "BV1WRDxBuE1K": {
+      "view": 26784,
+      "like": 780,
+      "favorite": 49,
+      "coin": 79,
+      "share": 55,
+      "danmaku": 60,
+      "reply": 268
+    },
+    "BV1wvDsBPErv": {
+      "view": 30728,
+      "like": 789,
+      "favorite": 79,
+      "coin": 62,
+      "share": 48,
+      "danmaku": 36,
+      "reply": 369
+    },
+    "BV1NCDHBcETi": {
+      "view": 41423,
+      "like": 869,
+      "favorite": 58,
+      "coin": 57,
+      "share": 35,
+      "danmaku": 38,
+      "reply": 278
+    },
+    "BV1yTDWBYEr8": {
+      "view": 81383,
+      "like": 1466,
+      "favorite": 339,
+      "coin": 157,
+      "share": 264,
+      "danmaku": 163,
+      "reply": 701
+    },
+    "BV1fUD7BgEZK": {
+      "view": 39282,
+      "like": 908,
+      "favorite": 50,
+      "coin": 58,
+      "share": 79,
+      "danmaku": 47,
+      "reply": 392
+    },
+    "BV1ArD6BLE6C": {
+      "view": 55121,
+      "like": 1195,
+      "favorite": 83,
+      "coin": 105,
+      "share": 126,
+      "danmaku": 41,
+      "reply": 663
+    },
+    "BV1JUD6BzEtA": {
+      "view": 32595,
+      "like": 762,
+      "favorite": 43,
+      "coin": 55,
+      "share": 49,
+      "danmaku": 11,
+      "reply": 273
+    },
+    "BV1tVDrBpEe5": {
+      "view": 114687,
+      "like": 1579,
+      "favorite": 230,
+      "coin": 159,
+      "share": 166,
+      "danmaku": 31,
+      "reply": 375
+    },
+    "BV1ZbDzBYEqt": {
+      "view": 87206,
+      "like": 1635,
+      "favorite": 127,
+      "coin": 174,
+      "share": 476,
+      "danmaku": 137,
+      "reply": 712
+    },
+    "BV1W5DqBKE45": {
+      "view": 37849,
+      "like": 770,
+      "favorite": 78,
+      "coin": 78,
+      "share": 99,
+      "danmaku": 34,
+      "reply": 371
+    },
+    "BV1FnDqBwEod": {
+      "view": 32551,
+      "like": 720,
+      "favorite": 178,
+      "coin": 50,
+      "share": 45,
+      "danmaku": 51,
+      "reply": 196
+    },
+    "BV1DRDeB3Eoo": {
+      "view": 34702,
+      "like": 793,
+      "favorite": 62,
+      "coin": 34,
+      "share": 68,
+      "danmaku": 48,
+      "reply": 445
+    },
+    "BV1r3DYBQEs3": {
+      "view": 66501,
+      "like": 1254,
+      "favorite": 172,
+      "coin": 67,
+      "share": 155,
+      "danmaku": 51,
+      "reply": 594
+    },
+    "BV12kDYB8EGz": {
+      "view": 27651,
+      "like": 710,
+      "favorite": 32,
+      "coin": 35,
+      "share": 31,
+      "danmaku": 24,
+      "reply": 275
+    },
+    "BV1jjDhB6ExY": {
+      "view": 54231,
+      "like": 1141,
+      "favorite": 128,
+      "coin": 74,
+      "share": 102,
+      "danmaku": 41,
+      "reply": 479
+    },
+    "BV1rRDcBwEn6": {
+      "view": 28586,
+      "like": 801,
+      "favorite": 37,
+      "coin": 57,
+      "share": 26,
+      "danmaku": 27,
+      "reply": 282
+    },
+    "BV1pXDcBeEP2": {
+      "view": 41518,
+      "like": 951,
+      "favorite": 130,
+      "coin": 70,
+      "share": 101,
+      "danmaku": 55,
+      "reply": 303
+    },
+    "BV1Rs9MB2E3j": {
+      "view": 63307,
+      "like": 1211,
+      "favorite": 106,
+      "coin": 90,
+      "share": 137,
+      "danmaku": 115,
+      "reply": 814
+    },
+    "BV1Pt9uBeErf": {
+      "view": 72035,
+      "like": 1377,
+      "favorite": 233,
+      "coin": 121,
+      "share": 346,
+      "danmaku": 86,
+      "reply": 682
+    },
+    "BV1bZ9TBKETZ": {
+      "view": 85626,
+      "like": 1777,
+      "favorite": 261,
+      "coin": 189,
+      "share": 555,
+      "danmaku": 172,
+      "reply": 1100
+    },
+    "BV1LM9FBxEPN": {
+      "view": 33692,
+      "like": 786,
+      "favorite": 51,
+      "coin": 92,
+      "share": 47,
+      "danmaku": 38,
+      "reply": 495
+    },
+    "BV1wXXfBqErW": {
+      "view": 18038,
+      "like": 584,
+      "favorite": 18,
+      "coin": 64,
+      "share": 23,
+      "danmaku": 13,
+      "reply": 155
+    },
+    "BV1bzXfBLErC": {
+      "view": 35628,
+      "like": 846,
+      "favorite": 44,
+      "coin": 59,
+      "share": 90,
+      "danmaku": 66,
+      "reply": 611
+    },
+    "BV1ot9WBfETQ": {
+      "view": 25198,
+      "like": 702,
+      "favorite": 32,
+      "coin": 36,
+      "share": 21,
+      "danmaku": 35,
+      "reply": 432
+    },
+    "BV1R89HBSEND": {
+      "view": 32245,
+      "like": 790,
+      "favorite": 32,
+      "coin": 80,
+      "share": 83,
+      "danmaku": 26,
+      "reply": 288
+    },
+    "BV1Zg9LBuE5s": {
+      "view": 42410,
+      "like": 1174,
+      "favorite": 67,
+      "coin": 282,
+      "share": 83,
+      "danmaku": 47,
+      "reply": 537
+    },
+    "BV1S49LBtEvx": {
+      "view": 55855,
+      "like": 1230,
+      "favorite": 102,
+      "coin": 103,
+      "share": 210,
+      "danmaku": 140,
+      "reply": 725
+    },
+    "BV1dg9VBhEXf": {
+      "view": 41424,
+      "like": 836,
+      "favorite": 55,
+      "coin": 56,
+      "share": 47,
+      "danmaku": 45,
+      "reply": 455
+    },
+    "BV1iUXzBqEdu": {
+      "view": 95271,
+      "like": 1604,
+      "favorite": 233,
+      "coin": 119,
+      "share": 190,
+      "danmaku": 79,
+      "reply": 834
+    },
+    "BV1jaX6BMEP6": {
+      "view": 27860,
+      "like": 690,
+      "favorite": 28,
+      "coin": 32,
+      "share": 16,
+      "danmaku": 22,
+      "reply": 341
+    },
+    "BV1X9XqBxExz": {
+      "view": 42760,
+      "like": 737,
+      "favorite": 37,
+      "coin": 47,
+      "share": 66,
+      "danmaku": 60,
+      "reply": 295
+    },
+    "BV1frXqBeE7c": {
+      "view": 46145,
+      "like": 878,
+      "favorite": 80,
+      "coin": 63,
+      "share": 73,
+      "danmaku": 62,
+      "reply": 246
+    },
+    "BV1EQXaBpES6": {
+      "view": 46304,
+      "like": 1100,
+      "favorite": 98,
+      "coin": 141,
+      "share": 79,
+      "danmaku": 51,
+      "reply": 421
+    },
+    "BV1pkXaBbEBj": {
+      "view": 41385,
+      "like": 929,
+      "favorite": 84,
+      "coin": 82,
+      "share": 127,
+      "danmaku": 68,
+      "reply": 341
+    },
+    "BV1AxXYBFEAT": {
+      "view": 31472,
+      "like": 835,
+      "favorite": 62,
+      "coin": 52,
+      "share": 90,
+      "danmaku": 57,
+      "reply": 309
+    },
+    "BV1L7XaB1ETf": {
+      "view": 47230,
+      "like": 1029,
+      "favorite": 77,
+      "coin": 95,
+      "share": 85,
+      "danmaku": 61,
+      "reply": 581
+    },
+    "BV1SQXdBzEXe": {
+      "view": 70026,
+      "like": 1244,
+      "favorite": 212,
+      "coin": 78,
+      "share": 75,
+      "danmaku": 38,
+      "reply": 332
+    },
+    "BV1pMXoBfEWN": {
+      "view": 24761,
+      "like": 681,
+      "favorite": 34,
+      "coin": 57,
+      "share": 64,
+      "danmaku": 47,
+      "reply": 326
+    },
+    "BV14zXoBqExZ": {
+      "view": 25204,
+      "like": 692,
+      "favorite": 36,
+      "coin": 71,
+      "share": 80,
+      "danmaku": 32,
+      "reply": 330
+    },
+    "BV1NGXQBDE9y": {
+      "view": 46586,
+      "like": 1212,
+      "favorite": 137,
+      "coin": 210,
+      "share": 147,
+      "danmaku": 113,
+      "reply": 722
+    },
+    "BV1s5XQBJEMz": {
+      "view": 32466,
+      "like": 902,
+      "favorite": 60,
+      "coin": 120,
+      "share": 116,
+      "danmaku": 71,
+      "reply": 327
+    },
+    "BV18HXDBREs3": {
+      "view": 48638,
+      "like": 1180,
+      "favorite": 117,
+      "coin": 161,
+      "share": 348,
+      "danmaku": 127,
+      "reply": 827
+    },
+    "BV1SBXmBjE4J": {
+      "view": 21157,
+      "like": 622,
+      "favorite": 31,
+      "coin": 45,
+      "share": 15,
+      "danmaku": 8,
+      "reply": 170
+    },
+    "BV1YgX5B4EEf": {
+      "view": 33762,
+      "like": 835,
+      "favorite": 41,
+      "coin": 63,
+      "share": 45,
+      "danmaku": 31,
+      "reply": 372
+    },
+    "BV1YZXTB3E9E": {
+      "view": 33977,
+      "like": 980,
+      "favorite": 77,
+      "coin": 138,
+      "share": 55,
+      "danmaku": 55,
+      "reply": 336
+    },
+    "BV1hwXMBBEe9": {
+      "view": 19374,
+      "like": 542,
+      "favorite": 31,
+      "coin": 34,
+      "share": 38,
+      "danmaku": 7,
+      "reply": 151
+    },
+    "BV1oYXMB7E6L": {
+      "view": 30888,
+      "like": 886,
+      "favorite": 42,
+      "coin": 165,
+      "share": 45,
+      "danmaku": 39,
+      "reply": 289
+    },
+    "BV1hRXABoEvc": {
+      "view": 27807,
+      "like": 767,
+      "favorite": 54,
+      "coin": 74,
+      "share": 62,
+      "danmaku": 30,
+      "reply": 335
+    },
+    "BV1gBXPBtE5V": {
+      "view": 51169,
+      "like": 992,
+      "favorite": 74,
+      "coin": 51,
+      "share": 122,
+      "danmaku": 29,
+      "reply": 479
+    },
+    "BV1BpXPBBEjY": {
+      "view": 25129,
+      "like": 738,
+      "favorite": 43,
+      "coin": 69,
+      "share": 50,
+      "danmaku": 59,
+      "reply": 243
+    },
+    "BV13EXNBcEW5": {
+      "view": 34261,
+      "like": 894,
+      "favorite": 119,
+      "coin": 76,
+      "share": 64,
+      "danmaku": 22,
+      "reply": 410
+    },
+    "BV1JvXWBwERy": {
+      "view": 71310,
+      "like": 1447,
+      "favorite": 102,
+      "coin": 194,
+      "share": 674,
+      "danmaku": 170,
+      "reply": 741
+    },
+    "BV1x1XsB5Erj": {
+      "view": 39997,
+      "like": 1035,
+      "favorite": 49,
+      "coin": 87,
+      "share": 62,
+      "danmaku": 125,
+      "reply": 442
+    },
+    "BV1FgXpB8EvF": {
+      "view": 48053,
+      "like": 1179,
+      "favorite": 72,
+      "coin": 142,
+      "share": 79,
+      "danmaku": 101,
+      "reply": 601
+    }
+  }
+}
