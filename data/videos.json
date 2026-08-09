@@ -1,5 +1,27 @@
 [
   {
+    "bvid": "BV1pTu264E5N",
+    "title": "股市之路充满挑战",
+    "pubdate": 1786250163,
+    "duration": 355,
+    "pic": "http://i0.hdslb.com/bfs/archive/f06c050a46ea5f1e7f2bf2b98721e360cbb7d841.jpg",
+    "owner": {
+      "mid": 2137589551,
+      "name": "李大霄"
+    }
+  },
+  {
+    "bvid": "BV15huj6bEjr",
+    "title": "韩股崩盘始末",
+    "pubdate": 1786241773,
+    "duration": 1290,
+    "pic": "http://i2.hdslb.com/bfs/archive/efdd6f8340a136aec1f3e68cc6b66137354a6748.jpg",
+    "owner": {
+      "mid": 2137589551,
+      "name": "李大霄"
+    }
+  },
+  {
     "bvid": "BV1ZQug6SETj",
     "title": "交易的至高境界",
     "pubdate": 1786171488,
@@ -60,6 +82,17 @@
     "pubdate": 1785904682,
     "duration": 345,
     "pic": "http://i0.hdslb.com/bfs/archive/662e60a6bdbd32027ee0dd7e5a945d702b110b4b.jpg",
+    "owner": {
+      "mid": 2137589551,
+      "name": "李大霄"
+    }
+  },
+  {
+    "bvid": "BV19MMr64E5z",
+    "title": "反弹了！投资要量力而为",
+    "pubdate": 1785897934,
+    "duration": 255,
+    "pic": "http://i0.hdslb.com/bfs/archive/58b5345c57ec64c391a2fd923235e5bddfb24b25.jpg",
     "owner": {
       "mid": 2137589551,
       "name": "李大霄"
