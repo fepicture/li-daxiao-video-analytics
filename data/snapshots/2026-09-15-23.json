@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-15",
+  "collected_at": "2026-09-15T23:01:13.161Z",
+  "videos": {
+    "BV1DaGg65E72": {
+      "view": 102471,
+      "like": 3175,
+      "favorite": 449,
+      "coin": 810,
+      "share": 336,
+      "danmaku": 284,
+      "reply": 1120
+    },
+    "BV1XLEu6ZEM7": {
+      "view": 25163,
+      "like": 737,
+      "favorite": 62,
+      "coin": 102,
+      "share": 60,
+      "danmaku": 47,
+      "reply": 329
+    }
+  }
+}
