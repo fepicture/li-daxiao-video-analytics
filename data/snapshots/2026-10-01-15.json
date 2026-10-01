@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-01",
+  "collected_at": "2026-10-01T15:34:04.949Z",
+  "videos": {
+    "BV1k7396SE47": {
+      "view": 65671,
+      "like": 2140,
+      "favorite": 252,
+      "coin": 428,
+      "share": 142,
+      "danmaku": 154,
+      "reply": 708
+    },
+    "BV15V3u61Eei": {
+      "view": 144465,
+      "like": 3314,
+      "favorite": 445,
+      "coin": 473,
+      "share": 561,
+      "danmaku": 180,
+      "reply": 1199
+    },
+    "BV1DRDeB3Eoo": {
+      "view": 35551,
+      "like": 798,
+      "favorite": 62,
+      "coin": 34,
+      "share": 68,
+      "danmaku": 48,
+      "reply": 448
+    }
+  }
+}
